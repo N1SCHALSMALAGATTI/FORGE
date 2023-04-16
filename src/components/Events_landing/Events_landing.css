@@ -74,6 +74,17 @@ article img {
   padding: 24px;
 }
 
+.article-body h2 {
+  color: #ff4655;
+}
+
+.article-body p {
+  color: #333;
+}
+
+.read-more {
+  font-size: 20px;
+}
 article a {
   display: inline-flex;
   align-items: center;
@@ -219,12 +230,14 @@ article:has(:hover, :focus) {
   color: #000;
 }
 /* } */
-.read-more{
-  padding-top: 40px;
-  font-size: 30px;
+.read-more {
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #333;
+  color: whitesmoke;
 }
 
-
-.article-body h2{
+.article-body h2 {
   color: "#FF4654";
 }

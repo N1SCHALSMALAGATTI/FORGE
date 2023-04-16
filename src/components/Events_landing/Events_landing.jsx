@@ -116,7 +116,7 @@ export default function Events_landing() {
                   mentorship. Win exciting prizes and explore the potential of
                   VR/AR.
                 </p>
-                <a href="#" class="read-more">
+                <a href="/hackathon" class="read-more">
                   Register-now{" "}
                   <span class="sr-only">about this is some title</span>
                   <svg
@@ -149,7 +149,7 @@ export default function Events_landing() {
                   lobortis porta. Vestibulum ultrices iaculis enim imperdiet
                   egestas.
                 </p>
-                <a href="#" class="read-more">
+                <a href="/rendezvous" class="read-more">
                   Register-now{" "}
                   <span class="sr-only">about this is some title</span>
                   <svg
@@ -251,7 +251,7 @@ export default function Events_landing() {
                   missions and espionage.{" "}
                 </p>
                 <a href="#" class="read-more">
-                Read-more{" "}
+                  Read-more{" "}
                   <span class="sr-only">about this is some title</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -285,7 +285,7 @@ export default function Events_landing() {
                   movie on the big screen at our gaming event.{" "}
                 </p>
                 <a href="#" class="read-more">
-                Read-more{" "}
+                  Read-more{" "}
                   <span class="sr-only">about this is some title</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

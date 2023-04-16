@@ -96,13 +96,13 @@ button[type=submit]:hover {
   color: white;
 }
 
-.event {
+.event1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.event-page {
+.event-page1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,7 +114,7 @@ button[type=submit]:hover {
   background-color: #333;
 }
 
-.content {
+.content1 {
   color: #efefef;
   font-family: "Rubik";
 }
