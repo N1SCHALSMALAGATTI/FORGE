@@ -108,11 +108,11 @@ function EventPage(props) {
           <li>+91 79968 81962 - Vaishakh</li>
           <li>+91 6383 240 522 - Nikita</li>
           <button
-            class="valorant-btn"
+            className="valorant-btn"
             onClick={() => (window.location.href = `${props.reference}`)}
           >
-            <span class="underlay">
-              <span class="label">Register</span>
+            <span className="underlay">
+              <span className="label">Register</span>
             </span>
           </button>
         </div>

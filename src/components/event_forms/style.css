@@ -1,11 +1,3 @@
-/* * {
-    font-family: sans-serif;
-    list-style: none;
-    padding: 0;
-    margin:0;
-    
-} */
-
 input[type="text"],
 select {
   width: 50%;
@@ -28,7 +20,7 @@ select {
   box-sizing: border-box;
 }
 
-button[type="submit"] {
+/* button[type=submit] {
   width: 50%;
   background-color: #494949;
   color: white;
@@ -39,13 +31,55 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-button[type="submit"]:hover {
+button[type=submit]:hover {
   background-color: #45a049;
-}
+} */
+
+/* .valo-form { */
+/* border-radius: 5px; */
+/* background-color: #f2f2f2; */
+/* padding: 20px;
+  text-align: center;
+  background: url(./assets/neonpack.jpeg) no-repeat fixed ;
+  background-size: cover;
+  height:100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; */
+/* } */
+
+/* .fifa-form { */
+/* border-radius: 5px; */
+/* background-color: #f2f2f2; */
+/* padding: 20px;
+  text-align: center;
+  background: url(./assets/fifa.jpeg) no-repeat fixed ;
+  background-size: 100% 100%;
+  height:100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; */
+/* } */
+
+/* .bgmi-form { */
+/* border-radius: 5px; */
+/* background-color: #f2f2f2; */
+/* padding: 20px;
+  text-align: center;
+  background: url(./assets/bgmi.jpg) no-repeat fixed ;
+  background-size: cover;
+  height:100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; */
+/* } */
 
 .succuss {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-color: #494949;
   padding: 20px;
   display: flex;
@@ -56,26 +90,19 @@ button[type="submit"]:hover {
 
 .text-succuss {
   color: rgb(78, 210, 78);
-  font-size: 2em;
-  font-family: "Play";
 }
 
 .succuss p {
   color: white;
-  font-family: "Roboto";
 }
 
-.succuss-img {
-  height: 400px;
-}
-
-.event1 {
+.event {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.event-page1 {
+.event-page {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,11 +111,10 @@ button[type="submit"]:hover {
   height: 100vh;
   text-align: left;
   padding: 20px;
-  background-color: #000000;
-  padding-right: 20px;
+  background-color: #333;
 }
 
-.content1 {
+.content {
   color: #efefef;
   font-family: "Rubik";
 }

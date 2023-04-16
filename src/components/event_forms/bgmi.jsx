@@ -19,40 +19,48 @@ function Bgmi() {
 
   async function registerBgmiUser(event) {
     event.preventDefault();
-    const res = await Axios.post(
-      "https://forge-backend-service.onrender.com/bgmi",
-      {
-        teamName: teamName,
-        teamCaptain: teamCaptain,
-        regNo1: regNo1,
-        teamMate2: teamMate2,
-        regNo2: regNo2,
-        teamMate3: teamMate3,
-        regNo3: regNo3,
-        teamMate4: teamMate4,
-        regNo4: regNo4,
-        sub: sub,
-        regNo5: regNo5,
-        captainIgName: captainIgName,
-        TxId: TxId,
-      },
-      {
-        header: {
-          "content-type": "application/json",
+    try {
+      await Axios.post(
+        "https://forge-backend-service.onrender.com/bgmi",
+        {
+          teamName: teamName,
+          teamCaptain: teamCaptain,
+          regNo1: regNo1,
+          teamMate2: teamMate2,
+          regNo2: regNo2,
+          teamMate3: teamMate3,
+          regNo3: regNo3,
+          teamMate4: teamMate4,
+          regNo4: regNo4,
+          sub: sub,
+          regNo5: regNo5,
+          captainIgName: captainIgName,
+          TxId: TxId,
         },
-      }
-    ).then(() => (window.location.href = "/succuss"));
+        {
+          header: {
+            "content-type": "application/json",
+          },
+        }
+      ).then(() => (window.location.href = "/succuss"));
+    } catch (error) {
+      window.alert(
+        "Failed to submit. Please check the values you typed. Try typing unique values."
+      );
+    }
+    
   }
 
   return (
     <div className="form">
-      <h1 className="form-title">BGMI Registration</h1>
+      <h1>BGMI Registration</h1>
       <form method="POST" onSubmit={registerBgmiUser}>
         <input
           value={teamName}
           type="text"
           placeholder="Team Name"
           onChange={(e) => setTeamName(e.target.value)}
+          required
         />
         <br />
         <input
@@ -60,6 +68,7 @@ function Bgmi() {
           type="text"
           placeholder="Captain Name"
           onChange={(e) => setTeamCaptain(e.target.value)}
+          required
         />
         <br />
         <input
@@ -67,6 +76,7 @@ function Bgmi() {
           type="text"
           placeholder="Captain Registration Number"
           onChange={(e) => setRegNo1(e.target.value)}
+          required
         />
         <br />
         <input
@@ -74,6 +84,7 @@ function Bgmi() {
           type="text"
           placeholder="TeamMate-2 Name"
           onChange={(e) => setTeamMate2(e.target.value)}
+          required
         />
         <br />
         <input
@@ -81,6 +92,7 @@ function Bgmi() {
           type="text"
           placeholder="TeamMate-2 Registration Number"
           onChange={(e) => setRegNo2(e.target.value)}
+          required
         />
         <br />
         <input
@@ -88,6 +100,7 @@ function Bgmi() {
           type="text"
           placeholder="TeamMate-3 Name"
           onChange={(e) => setTeamMate3(e.target.value)}
+          required
         />
         <br />
         <input
@@ -95,6 +108,7 @@ function Bgmi() {
           type="text"
           placeholder="TeamMate-3 Registration Number"
           onChange={(e) => setRegNo3(e.target.value)}
+          required
         />
         <br />
         <input
@@ -102,6 +116,7 @@ function Bgmi() {
           type="text"
           placeholder="TeamMate-4 Name"
           onChange={(e) => setTeamMate4(e.target.value)}
+          required
         />
         <br />
         <input
@@ -109,6 +124,7 @@ function Bgmi() {
           type="text"
           placeholder="TeamMate-4 Registration Number"
           onChange={(e) => setRegNo4(e.target.value)}
+          required
         />
         <br />
         <input
@@ -130,6 +146,7 @@ function Bgmi() {
           type="text"
           placeholder="Captain In-game Name"
           onChange={(e) => setCaptainIgName(e.target.value)}
+          required
         />
         <br />
         <input
@@ -137,9 +154,14 @@ function Bgmi() {
           type="text"
           placeholder="Transaction Id"
           onChange={(e) => setTxId(e.target.value)}
+          required
         />
         <br />
-        <button type="submit">Submit</button>
+        <button type="submit" className="valorant-btn">
+          <span class="underlay">
+            <span class="label">Submit</span>
+          </span>
+        </button>
       </form>
     </div>
   );
