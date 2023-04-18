@@ -1,34 +1,35 @@
-import {useState} from 'react';
-import Axios from 'axios'
-import './form.css'
+import { useState } from "react";
+import Axios from "axios";
+import "./form.css";
 
-function Valorant(){
-    const [TeamName, setTeamName] = useState("");
-    const [CaptainPhone, setCaptainPhone] = useState("");
-    const [IgName, setIgName] = useState("");
-    const [DiscordId, setDiscordId] = useState("");
-    const [TxId, setTxId] = useState("");
+function Valorant() {
+  const [TeamName, setTeamName] = useState("");
+  const [CaptainPhone, setCaptainPhone] = useState("");
+  const [IgName, setIgName] = useState("");
+  const [DiscordId, setDiscordId] = useState("");
+  const [TxId, setTxId] = useState("");
 
-    async function registerUser(event) {
-      event.preventDefault();
-      const res = await Axios.post(
-        "https://forge-backend-service.onrender.com/valo",
-        {
-          TeamName: TeamName,
-          CaptainPhone: CaptainPhone,
-          CaptainIgName: IgName,
-          CaptainDiscordId: DiscordId,
-          TxId: TxId,
+  async function registerUser(event) {
+    event.preventDefault();
+    const res = await Axios.post(
+      "https://forge-backend-service.onrender.com/valo",
+      {
+        TeamName: TeamName,
+        CaptainPhone: CaptainPhone,
+        CaptainIgName: IgName,
+        CaptainDiscordId: DiscordId,
+        TxId: TxId,
+      },
+      {
+        header: {
+          "content-type": "application/json",
         },
-        {
-          header: {
-            "content-type": "application/json",
-          },
-        }
-      ).then(() => (window.location.href = "/succuss"));
-    }
+      }
+    ).then(() => (window.location.href = "/succuss"));
+  }
 
-    return (
+  return (
+    <div className="login">
       <div className="form">
         <h1 className="form-title">Valorant Registration</h1>
         <form method="POST" onSubmit={registerUser}>
@@ -68,10 +69,10 @@ function Valorant(){
           />
           <br />
           <button type="submit">Submit</button>
-          
         </form>
       </div>
-    );
+    </div>
+  );
 }
 
-export default Valorant
+export default Valorant;

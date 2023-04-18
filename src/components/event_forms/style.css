@@ -1,9 +1,8 @@
 /* * {
-    font-family: sans-serif;
-    list-style: none;
-    padding: 0;
-    margin:0;
-    
+  font-family: sans-serif;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 } */
 
 input[type="text"],
@@ -69,10 +68,19 @@ button[type="submit"]:hover {
   height: 400px;
 }
 
+.event-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 50px; */
+}
+
 .event1 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  width: 50%;
 }
 
 .event-page1 {
@@ -80,22 +88,16 @@ button[type="submit"]:hover {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  width: 100%;
-  height: 100vh;
   text-align: left;
   padding: 20px;
-  background-color: #000000;
-  /* padding-right: 20px; */
-  /* margin-right: 200px; */
+  background-color: #333;
+  min-height: 100vh;
 }
 
 .content1 {
   color: #efefef;
   font-family: "Rubik";
-  padding: 0px 500px;
-  margin-right: 50px;
-  /* margin-bottom: 200px; */
-  
+  padding: 0px 100px;
 }
 
 .valorant-btn {
